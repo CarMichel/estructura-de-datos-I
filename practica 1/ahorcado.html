@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ahorcado Game</title>
+  <style>
+    input[type="text"] {
+      text-align: center;
+      font-size: 18px;
+      width: 25px;
+    }
+    #resultado {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+  <script src="ahorcado.js" defer></script>
+</head>
+<body>
+  <h2>Juego del Ahorcado</h2>
+  <form id="formulario">
+    <label>cabeza: <input type="text" id="cabeza" readonly></label><br>
+    <label>brazos: <input type="text" id="brazos" readonly></label><br>
+    <label>cuerpo: <input type="text" id="cuerpo" readonly></label><br>
+    <label>piernas: <input type="text" id="piernas" readonly></label><br>
+    <label>pies: <input type="text" id="pies" readonly></label><br><br>
+
+    <p>introducir letras:</p>
+    <input type="text" id="letra1" maxlength="1">
+    <input type="text" id="letra2" maxlength="1">
+    <input type="text" id="letra3" maxlength="1">
+    <input type="text" id="letra4" maxlength="1">
+    <input type="text" id="letra5" maxlength="1">
+    <input type="text" id="letra6" maxlength="1">
+    <input type="text" id="letra7" maxlength="1"><br><br>
+
+    <button type="submit" id="verificar">Verificar</button>
+    <button type="button" id="nuevo">Nuevo</button>
+  </form>
+
+  <h3>Resultado:</h3>
+  <p id="resultado">_ _ _ _ _ _ _</p>
+</body>
+</html>
+
+
