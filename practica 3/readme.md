@@ -11,7 +11,7 @@ Luego, al presionar el boton correspondiente, aplica el algoritmo de **Heap Sort
 
 ## 🚀 Ejecucion desde Git
 1. Clona el repositorio:
-    git clone https://github.com/tu_usuario/heap_sort_gui.git
+    git clone https://github.com/CarMichel/estructura-de-datos-I.git
 2. Entra a la carpeta donde se encuentra el archivo monticulo.py
 3. Ejecuta el programa:
     python monticulo.py

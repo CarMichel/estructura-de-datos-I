@@ -12,7 +12,7 @@ El factorial se define como:
 
 ## 🚀 Ejecucion desde Git
 1. Clona el repositorio:
-   git clone https://github.com/tu_usuario/factorial_program.git
+   git clone https://github.com/CarMichel/estructura-de-datos-I.git
 2. Entra a la carpeta donde se encuentra el archivo factorial.py
 3. Ejecuta el programa:
    python factorial.py
