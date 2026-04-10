@@ -1,54 +1,43 @@
-# 📌 Programa Fichas
+# 📌 Programa Fichas con Pila (Python + Tkinter)
 
 ## 📝 Descripción
-El programa **`fichas.py`** es una aplicación sencilla en **Python con Tkinter** que simula un sistema de atención al cliente mediante fichas numeradas.  
-Permite generar fichas consecutivas en memoria (sin base de datos) y reiniciar el conteo cuando sea necesario.
+Este programa implementa un sistema de **fichas de atención al cliente** utilizando la estructura de datos **pila (LIFO)** en Python con interfaz gráfica creada en **Tkinter**.  
+Cada ficha se apila en memoria y la última que se genera es la primera que se atiende.
 
-Este programa es útil para:
-- Simular turnos de atención en una caja o ventanilla.
-- Practicar conceptos básicos de **estructuras de datos (pilas)** y manejo de interfaces gráficas.
-- Implementar un sistema ligero de control de fichas sin necesidad de almacenamiento externo.
-
----
+Es ideal para:
+- Comprender cómo funcionan las **pilas** en programación.
+- Simular un sistema básico de fichas con lógica **Last In, First Out**.
+- Practicar el uso de **Tkinter** para interfaces gráficas.
 
 ## 🎯 Funcionalidades
-- **Ficha inicial:** comienza en `A-0000`.
-- **Botón "Pedir ficha":**
-  - Incrementa el número de ficha.
-  - Muestra el nuevo número en la ventana principal.
-  - Abre una ventana emergente con el detalle de la ficha.
-- **Botón "Reiniciar conteo":**
-  - Vuelve el contador a `A-0000`.
-  - Muestra un mensaje de confirmación.
-
----
+- **Pedir ficha (push):** genera una nueva ficha y la apila en la pila.
+- **Atender ficha (pop):** desapila la última ficha agregada y muestra un mensaje con el número atendido.
+- **Reiniciar pila:** vacía la pila y reinicia el contador a `A-0000`.
+- **Visualización:** la etiqueta principal muestra siempre la ficha que está en la cima de la pila.
 
 ## 🖥️ Interfaz
 La ventana principal incluye:
-- Título: *Ficha Atención al Cliente*  
-- Etiqueta con el número de ficha actual.  
-- Botón **Pedir ficha** (verde).  
-- Botón **Reiniciar conteo** (rojo).  
+- Título: *Ficha Atención al Cliente (Pila)*  
+- Etiqueta con el número de ficha actual (cima de la pila).  
+- Botones:
+  - **Pedir ficha (push)** → agrega una ficha a la pila.
+  - **Atender ficha (pop)** → quita la última ficha de la pila.
+  - **Reiniciar pila** → vacía la pila y reinicia el contador.
 
 Al pedir una ficha, se abre una ventana emergente con:
 FICHA ATENCIÓN AL CLIENTE
 A-0001
 CAJA
 
-Código
-
----
-
 ## 🚀 Requisitos
 - Python 3.x instalado.
 - Librería estándar **Tkinter** (incluida en Python).
-
----
+- No requiere base de datos ni librerías externas.
 
 ## ⚙️ Instalación y ejecución
 
 ### 1. Clonar el repositorio desde Git
 
 ### 2. Ejecutar el programa
-bash
 python fichas.py
+
