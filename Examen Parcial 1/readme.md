@@ -57,3 +57,68 @@ Arreglo ordenado:
 3. Escribir valores como `3.5`, `1.2`, `4.8`.
 4. Presionar **Ordenar con QuickSort**.
 5. El área de resultados mostrará:
+
+
+
+
+
+
+# 📌 Programa Pila en C# .NET
+
+## 📝 Descripción
+Este proyecto implementa un **Tipo Abstracto de Datos (TAD) Pila** en C# utilizando .NET.  
+La pila es una estructura de datos que sigue el principio **LIFO (Last In, First Out)**, donde el último elemento en entrar es el primero en salir.
+
+---
+
+## 🎯 Funcionalidades
+- **Push:** Inserta un elemento en la pila.
+- **Pop:** Extrae el último elemento insertado.
+- **Peek:** Consulta el elemento en el tope sin eliminarlo.
+- **EstaVacia / EstaLlena:** Verifica el estado de la pila.
+
+---
+
+## 📚 Ejemplo de uso
+```csharp
+Pila<int> pila = new Pila<int>(5);
+
+pila.Push(10);
+pila.Push(20);
+pila.Push(30);
+
+Console.WriteLine("Elemento en el tope: " + pila.Peek()); // 30
+Console.WriteLine("Sacando: " + pila.Pop()); // 30
+Console.WriteLine("Sacando: " + pila.Pop()); // 20
+Console.WriteLine("Elemento en el tope: " + pila.Peek()); // 10
+
+## 🚀 Requisitos
+Tener instalado .NET SDK 6 o superior.
+
+Verificar instalación con:
+
+Código
+dotnet --version
+## ⚙️ Ejecución del programa
+Crear un proyecto de consola en la carpeta deseada:
+
+Código
+dotnet new console -n TAD_Pila
+Copiar el código de la clase Pila<T> y el Main dentro del archivo Program.cs generado.
+
+Entrar a la carpeta del proyecto:
+
+Código
+cd TAD_Pila
+Ejecutar el programa:
+
+Código
+dotnet run
+## ✅ Resultado esperado
+Al ejecutar el programa, la salida será:
+
+Código
+Elemento en el tope: 30
+Sacando: 30
+Sacando: 20
+Elemento en el tope: 10
